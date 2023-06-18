@@ -1,0 +1,61 @@
+/* =====================
+     Formtação do corpo
+   ===================== */
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+/* =====================
+        Grid container 
+       (layout do site)
+   ===================== */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    row-gap: 292px;;
+    grid-template-areas:
+    "header .....  .... " 
+    "clock  clock  clock"
+    "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.clock {
+    justify-self: center;
+    grid-area: clock;
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.footer {
+    display: grid;
+    justify-self: center;
+    grid-area: footer;
+}
+
+/* =====================
+   Formatação do estilo
+          do clock
+   ===================== */
+span {    
+    font-family: "Arial", "Times New Roman", "Sans Serif";
+    font-size: 90pt;
+}
+
+footer {
+    width: 100%;
+}
+
+footer > p {
+    color: #000;
+    background-color: #FFF;
+    border-radius: 7px;
+    font-family: "Comic Sans", "Times New Roman" "Sans Serif";
+}
