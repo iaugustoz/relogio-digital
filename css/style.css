@@ -1,10 +1,21 @@
 /* =====================
-     Formtação do corpo
+     Formtação geral
    ===================== */
-body {
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Arial", "Times New Roman", "Sans Serif";
+}
+
+/* ===================== 
+    Variáveis globais
+          (Cores)
+   ===================== */
+:root {
+    --preto: #000;
+    --branco: #FFF;
+    --corDeFundo: #EEEAE7;
 }
 
 /* =====================
@@ -12,16 +23,19 @@ body {
             (Grid)
    ===================== */
 body {
+    background-color: var(--corDeFundo);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    row-gap: 161px;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, auto));
     grid-template-areas:
-    "header header ....." 
-    "clock  clock  clock"
-    "footer footer footer";
+    "header header ....."
+    "clock  clock  clock" 
+    "footer footer footer"; 
 }
 
 /* =====================
-   Tamanho dos elementos
+   Tamanho das linhas e
+       colunas (Grid)
    ===================== */
 body {
     grid-template-columns: auto auto auto;
@@ -29,7 +43,7 @@ body {
 }
 
 /* =====================
-      Layout do header
+      Layout da section
          (FlexBox)
    ===================== */
 section {
@@ -39,49 +53,70 @@ section {
     grid-area: header;
 }
 
+/* =====================
+       Layout interno 
+         (FlexBox)
+   ===================== */
 figure {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
+/* =====================
+     Formatação tag img
+   ===================== */
 img {
-    width: 45%;
-    height: 45%;
+    width: 60%;
+    height: 60%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
 }
 
-.grid-item-1 {
+/* =====================
+   Item do grid (navbar) 
+   ===================== */
+.grid-item-navbar{
     grid-area: clock;
     grid-column: 2 / 3;
-
+    place-self: center;
 }
 
+/* =====================
+    Design e Layout da
+           navbar  
+   ===================== */
 .navbar-style {
     display: flex;
     justify-content: space-around;
     text-align: center;
     width: 100%;
-    background-color: #FFF;
-    border: 1px solid #000;
-    border-radius: 15px;
+    background-color: var(--preto);
+    border-radius: 20px;
 }
 
+/* =====================
+    Formatação da tag a 
+   ===================== */
 a {
-    color:#000;
+    color: var(--branco);
     padding: 10px;
     text-decoration: none;
 }
 
-.grid-item-2 {
+/* =====================
+    Item do grid (clock) 
+   ===================== */
+.grid-item-clock {
     grid-area: clock;
     justify-self: center;
     align-items: center;
 }
 
 .clock-style {
-    background-color: #FFF;
-    border: 2px solid #000;
-    border-radius: 15px;
+    color: var(--branco);
+    background-color: var(--preto);
+    border-radius: 20px;
     padding: 20px;
 }
 
@@ -91,29 +126,36 @@ a {
    ===================== */
 span {    
     font-family: "Arial", "Times New Roman", "Sans Serif";
-    font-size: 60pt;
+    font-size: 90pt;
 }
 
-.grid-item-3 {
-    grid-area: footer;
-    justify-self: center;
-
-}
-
+/* =====================
+       Layout interno 
+         (FlexBox)
+   ===================== */
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    /* top: 323px; */
 }
 
+/* =====================
+   Estilo da tag footer    
+   ===================== */
 footer {
     width: 100%;
-    background-color: #FFF;
-    border: 1px solid #000;
-    border-radius: 10px;
-}
-
-footer p {
-    border-radius: 7px;
-    font-family: "Comic Sans", "Times New Roman" "Sans Serif";
+    height: 100px;
+    background-color: var(--preto);
+    color: var(--branco);
+    border-radius: 20px 20px 0px 0px;
 } 
+
+/* =====================
+   Item do grid (footer) 
+   ===================== */
+.grid-item-footer {
+    grid-area: footer;
+    align-content: center;
+}

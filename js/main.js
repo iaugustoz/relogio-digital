@@ -1,29 +1,39 @@
-var hora  = document.getElementById("hora");
-var minutos = document.getElementById("minutos");
-var segundos = document.getElementById("segundos");
+const hora  = document.getElementById("hora");
+const minutos = document.getElementById("minutos");
+const segundos = document.getElementById("segundos");
 
 function horarioAtual() {
-    var data = new Date();
-    var horaRelogio = data.getHours();
-    var minutoRelogio = data.getMinutes();
-    var segundoRelogio = data.getSeconds();
+    let data = new Date();
+    let horaRelogio = data.getHours();
+    let minutosRelogio = data.getMinutes();
+    let segundosRelogio = data.getSeconds();
 
 
-    if (segundoRelogio < 10) {
-        segundoRelogio = "0" + segundoRelogio;
+    if (segundosRelogio < 10) {
+        segundosRelogio = "0" + segundosRelogio;
 
-    } else if (minutoRelogio < 10) {
-        minutoRelogio = "0" + minutoRelogio;
+    } else if (minutosRelogio < 10) {
+        minutosRelogio = "0" + minutosRelogio;
 
     } else if (horaRelogio < 10) {
         horaRelogio = "0" + horaRelogio;
     }
 
     hora.innerHTML = horaRelogio;
-    minutos.innerHTML = minutoRelogio;
-    segundos.innerHTML = segundoRelogio;
+    minutos.innerHTML = minutosRelogio;
+    segundos.innerHTML = segundosRelogio;
 
 }
 
 setInterval(horarioAtual, 1000);
+
+const linkPortfolio = document.getElementById("portfolio");
+
+linkPortfolio.addEventListener("click", function() {
+    Swal.fire({
+        titleText: 'Em desenvolvimento 🚧',
+        icon: 'info',
+        confirmButtonColor: "#000"
+    });
+});
 

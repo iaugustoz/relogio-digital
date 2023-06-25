@@ -6,34 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relógio Digital</title>
 
+    <link rel="shortcut icon" href="img/icon.ico" />
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
 
+    <!-- Seção da Navbar -->
     <section>
         <figure>
             <img src="img/logo.svg" alt="Logo">
         </figure>
-        <nav class="navbar-style grid-item-1">
-            <a href="#" target="_blank">Portfólio</a>
-            <a href="https://www.linkedin.com/in/igorbrz/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/igoraugustobrz" target="_blank">GitHub</a>
+        <nav class="navbar-style grid-item-navbar">
+            <a href="#" id="portfolio">Portfólio</a>
+            <a href="https://linkedin.com/in/igorbrz/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/igoraugustobrz" target="_blank" id="">GitHub</a>
         </nav>
     </section>
+    <!-- Fim da Seção da Navbar -->
 
-    <section class="clock-style grid-item-2">
+    <!-- Seção do Relógio Digital -->
+    <section class="clock-style grid-item-clock">
         <span id="hora">00</span>
         <span>:</span>
         <span id="minutos">00</span>
         <span>:</span>
         <span id="segundos">00</span>
     </section>
+    <!-- Fim da Seção do Relógio Digital -->
 
-    <footer class="grid-item-3">
+    <!-- Rodapé -->
+    <footer class="grid-item-footer">
         <p>&copy; Igor Augusto</p>
     </footer>
+    <!-- Fim do Rodapé -->
 
 </body>
 
