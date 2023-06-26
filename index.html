@@ -7,41 +7,36 @@
     <title>Relógio Digital</title>
 
     <link rel="shortcut icon" href="img/icon.ico" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- JavaScript -->
     <script defer src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
 
-    <!-- Seção da Navbar -->
-    <section>
-        <figure>
-            <img src="img/logo.svg" alt="Logo">
-        </figure>
-        <nav class="navbar-style grid-item-navbar">
-            <a href="#" id="portfolio">Portfólio</a>
-            <a href="https://linkedin.com/in/igorbrz/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/igoraugustobrz" target="_blank" id="">GitHub</a>
-        </nav>
-    </section>
-    <!-- Fim da Seção da Navbar -->
+    <section class="container">
 
-    <!-- Seção do Relógio Digital -->
-    <section class="clock-style grid-item-clock">
-        <span id="hora">00</span>
-        <span>:</span>
-        <span id="minutos">00</span>
-        <span>:</span>
-        <span id="segundos">00</span>
-    </section>
-    <!-- Fim da Seção do Relógio Digital -->
+        <!-- Seção do Relógio Digital -->
+        <div class="clock">
+            <span id="hora">00</span>
+            <span>:</span>
+            <span id="minutos">00</span>
+            <span>:</span>
+            <span id="segundos">00</span>
+        </div>
+        <!-- Fim da Seção do Relógio Digital -->
 
-    <!-- Rodapé -->
-    <footer class="grid-item-footer">
-        <p>&copy; Igor Augusto</p>
-    </footer>
-    <!-- Fim do Rodapé -->
+        <!-- Rodapé -->
+        <footer>
+            <p>Feito por <a href="https://linkedin.com/in/igorbrz/" target="_blank">Igor Augusto</a></p>
+        </footer>
+        <!-- Fim do Rodapé -->
+
+    </section>
 
 </body>
 

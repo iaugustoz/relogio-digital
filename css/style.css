@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Bonheur+Royale&family=Inter&display=swap');
+
 /* =====================
      Formtação geral
    ===================== */
@@ -5,7 +8,16 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Arial", "Times New Roman", "Sans Serif";
+}
+
+/* =====================
+       Plano de fundo
+   ===================== */
+body {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 /* ===================== 
@@ -19,143 +31,64 @@
 }
 
 /* =====================
-       Layout do site 
-            (Grid)
-   ===================== */
-body {
-    background-color: var(--corDeFundo);
-    display: grid;
-    row-gap: 161px;
-    grid-template-columns: repeat(auto-fit, minmax(1fr, auto));
-    grid-template-areas:
-    "header header ....."
-    "clock  clock  clock" 
-    "footer footer footer"; 
-}
-
-/* =====================
-   Tamanho das linhas e
-       colunas (Grid)
-   ===================== */
-body {
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-}
-
-/* =====================
-      Layout da section
-         (FlexBox)
-   ===================== */
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: header;
-}
-
-/* =====================
-       Layout interno 
-         (FlexBox)
-   ===================== */
-figure {
-    display: flex;
-    justify-content: center;
-}
-
-/* =====================
-     Formatação tag img
-   ===================== */
-img {
-    width: 60%;
-    height: 60%;
-    aspect-ratio: 3/2;
-    object-fit: contain;
-    mix-blend-mode: color-burn;
-}
-
-/* =====================
-   Item do grid (navbar) 
-   ===================== */
-.grid-item-navbar{
-    grid-area: clock;
-    grid-column: 2 / 3;
-    place-self: center;
-}
-
-/* =====================
-    Design e Layout da
-           navbar  
-   ===================== */
-.navbar-style {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    width: 100%;
-    background-color: var(--preto);
-    border-radius: 20px;
-}
-
-/* =====================
     Formatação da tag a 
    ===================== */
 a {
     color: var(--branco);
-    padding: 10px;
-    text-decoration: none;
 }
 
 /* =====================
-    Item do grid (clock) 
+      Layout do site
+         (FlexBox)
    ===================== */
-.grid-item-clock {
-    grid-area: clock;
-    justify-self: center;
+.container {
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.clock-style {
-    color: var(--branco);
-    background-color: var(--preto);
-    border-radius: 20px;
-    padding: 20px;
+    height: 97%;
 }
 
 /* =====================
-    Formatação do estilo
-         do clock
+   Layout dos elementos 
+    internos do clock
+   ===================== */
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+/* =====================
+      Design do clock
+   ===================== */
+.clock {
+    color:var(--branco);
+    background: transparent;
+    box-shadow: 0px 10px 30px rgba(256, 256, 256, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* =====================
+    Formatação da hora,
+    minutos e segundos
    ===================== */
 span {    
-    font-family: "Arial", "Times New Roman", "Sans Serif";
+    font-family: "Open Sans", "Arial", "Times New Roman";
     font-size: 90pt;
 }
 
 /* =====================
-       Layout interno 
-         (FlexBox)
+      Layout do footer
    ===================== */
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    /* top: 323px; */
+    justify-self: center;
+    align-self: flex-end;
 }
 
-/* =====================
-   Estilo da tag footer    
-   ===================== */
 footer {
-    width: 100%;
-    height: 100px;
-    background-color: var(--preto);
+    font-family: "Bonheur Royale", "Arial";
+    font-size: 25pt;
     color: var(--branco);
-    border-radius: 20px 20px 0px 0px;
-} 
-
-/* =====================
-   Item do grid (footer) 
-   ===================== */
-.grid-item-footer {
-    grid-area: footer;
-    align-content: center;
 }
