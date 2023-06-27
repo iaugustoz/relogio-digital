@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Bonheur+Royale&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 /* =====================
      Formtação geral
@@ -27,7 +27,6 @@ body {
 :root {
     --preto: #000;
     --branco: #FFF;
-    --corDeFundo: #EEEAE7;
 }
 
 /* =====================
@@ -37,9 +36,22 @@ a {
     color: var(--branco);
 }
 
+/* ===================== 
+   Animação ao aparecer 
+   ===================== */            
+@keyframes showBallon {
+    from {
+        transform: translate(-30px);
+        opacity: 0;
+    }
+            
+    to {
+        opacity: 1;
+    }
+}
 /* =====================
-      Layout do site
-         (FlexBox)
+        Layout do site
+          (FlexBox)
    ===================== */
 .container {
     display: flex;
@@ -75,7 +87,7 @@ a {
     minutos e segundos
    ===================== */
 span {    
-    font-family: "Open Sans", "Arial", "Times New Roman";
+    font-family: "PT Serif", "Arial", "Times New Roman";
     font-size: 90pt;
 }
 
@@ -87,8 +99,75 @@ footer {
     align-self: flex-end;
 }
 
-footer {
-    font-family: "Bonheur Royale", "Arial";
-    font-size: 25pt;
+/* =====================
+      Texto do footer
+   ===================== */
+p {
+    font-family: "Bonheur Royale";
+    font-size: 28pt;
     color: var(--branco);
 }
+
+/* =====================
+       Span da tag p
+   ===================== */
+p span {
+    font-family: "Bonheur Royale";
+    font-size: 28pt;
+    color: var(--branco);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* =====================
+      Posicionamento do 
+           ballon
+   ===================== */
+.ballon {
+    display: none;
+    width: 120px;
+    height: 90px;
+    border-radius: 20px 10px 20px 0px;
+    background: white;
+    position: absolute;
+    bottom: 60px;
+    left: 900px;
+}
+
+/* =====================
+     Animação do ballon
+   ===================== */
+.ballon {
+    animation: showBallon;
+    animation-duration: 1s;
+}
+
+/* =====================
+      Texto dentro do
+          ballon
+   ===================== */
+.social-media {
+    font-family: "Arial";
+    text-decoration: none;
+    font-size: 13pt;
+    color: #000;
+}
+
+/* =====================
+      Padding entre o 
+      icon e o texto
+   ===================== */
+i {
+    padding: 0px 5px;
+}
+
+/* Animação de desaparecimento do ballon 
+@keyframes hiddenBallon {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+} */

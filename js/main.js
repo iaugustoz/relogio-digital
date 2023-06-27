@@ -23,10 +23,31 @@ function horarioAtual() {
         horaRelogio = "0" + horaRelogio;
     }
 
-    hora.innerHTML = horaRelogio;
-    minutos.innerHTML = minutosRelogio;
-    segundos.innerHTML = segundosRelogio;
+    hora.textContent = horaRelogio;
+    minutos.textContent = minutosRelogio;
+    segundos.textContent = segundosRelogio;
 
 }
 
 setInterval(horarioAtual, 1000);
+
+const paragraph = document.getElementsByTagName("p")[0];
+const ballon = document.getElementsByClassName("ballon")[0];
+const div = document.getElementById("div");
+
+paragraph.addEventListener("click", function() {
+    if (div.style.display == "none") {
+        ballon.style.display = "block";
+        div.style.cssText =
+        "display: flex;" +
+        "flex-direction: column;" +
+        "justify-content: flex-end;" +
+        "align-items: start;" +
+        "padding: 0px 10px;" +
+        "row-gap: 15px;"; 
+        
+    } else {
+        ballon.style.display = "none";
+    }
+
+});
