@@ -14,7 +14,7 @@
        Plano de fundo
    ===================== */
 body {
-    background-image: url('../img/background.jpg');
+    background-image: url('../img/background-desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -88,7 +88,7 @@ a {
    ===================== */
 span {    
     font-family: "PT Serif", "Arial", "Times New Roman";
-    font-size: 90pt;
+    font-size: 100pt;
 }
 
 /* =====================
@@ -114,8 +114,9 @@ p {
 p span {
     font-family: "Bonheur Royale";
     font-size: 28pt;
-    color: var(--branco);
+    font-style: italic;
     cursor: pointer;
+    animation: color 3s infinite;
     text-decoration: underline;
 }
 
@@ -128,10 +129,10 @@ p span {
     width: 120px;
     height: 90px;
     border-radius: 20px 10px 20px 0px;
-    background: white;
+    background: var(--branco);
     position: absolute;
     bottom: 60px;
-    left: 900px;
+    left: 58%;
 }
 
 /* =====================
@@ -150,7 +151,7 @@ p span {
     font-family: "Arial";
     text-decoration: none;
     font-size: 13pt;
-    color: #000;
+    color: var(--preto);
 }
 
 /* =====================
@@ -161,13 +162,12 @@ i {
     padding: 0px 5px;
 }
 
-/* Animação de desaparecimento do ballon 
-@keyframes hiddenBallon {
-    from {
-        opacity: 1;
+@keyframes color {
+    0% {
+        color: var(--preto);
     }
 
-    to {
-        opacity: 0;
+    100% {
+        color: var(--branco);
     }
-} */
+} 

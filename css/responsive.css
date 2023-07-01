@@ -1,3 +1,112 @@
-@media () {
+/* Para telas com largura de 300 até 320px */
+@media (min-width: 300px) and (max-width: 330px) {
+
+    body {
+        background: url(../img/background-mobile.png);
+    }
+
+    p, p span {
+        font-size: 20pt;
+    }
+
+    span {
+        font-size: 52pt;
+    }
+
+    .social-media {
+        font-size: 10pt;
+    }
+
+    .ballon {
+        height: 80px;
+        width: 100px;
+        left: 60%;
+        bottom: 60px; 
+    }
+}
+
+/* Para telas com largura de 331 até 399px */
+@media (min-width: 331px) and (max-width: 399px) {
+
+    body {
+        background: url(../img/background-mobile.png);
+    }
+
+    span {
+        font-size: 60pt;
+    }
+}
+
+/* Para telas com largura de 400px até 469px */
+@media (min-width: 400px) and (max-width: 470px) {
+
+    body {
+        background: url(../img/background-mobile.png);
+    }
+
+    span {
+        font-size: 68pt;
+    }
+
+    .social-media {
+        font-size: 10pt;
+    }
+
+    .ballon {
+        height: 80px;
+        width: 100px;
+        left: 65%;
+        bottom: 70px; 
+    }
+} 
+
+/* Para telas com largura de 470 até 719px */
+@media (min-width: 470px) and (max-width: 720px) {
+
+    body {
+        background: url(../img/background-mobile.png);
+    }
+
+    span {
+        font-size: 85pt;
+    }
+
+    .ballon {
+        left: 65%;
+        bottom: 70px; 
+    }
+}
+
+/* Para telas com largura de 720px até 920px */
+@media (min-width: 720px) and (max-width: 920px){
+
+    body {
+        background: url(../img/background-mobile.png);
+    }
+
+    span {
+        font-size: 100pt;
+    }
+
+    .ballon {
+        left: 65%;
+        bottom: 60px;
+    }
+}
+
+/* Para telas com largura de 921px até 1244px*/
+@media (min-width: 921px) and (max-width: 1244px) {
     
+    body {
+        background: url(../img/background-mobile.png);
+    }
+
+    span {
+        font-size: 100pt;
+    }
+
+    .ballon {
+        left: 60%;
+        bottom: 60px;
+    }
 }

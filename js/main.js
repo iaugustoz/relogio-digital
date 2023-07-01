@@ -31,11 +31,11 @@ function horarioAtual() {
 
 setInterval(horarioAtual, 1000);
 
-const paragraph = document.getElementsByTagName("p")[0];
+const span = document.getElementsByTagName("span")[5];
 const ballon = document.getElementsByClassName("ballon")[0];
 const div = document.getElementById("div");
 
-paragraph.addEventListener("click", function() {
+span.addEventListener("click", function() {
     if (div.style.display == "none") {
         ballon.style.display = "block";
         div.style.cssText =
@@ -47,7 +47,7 @@ paragraph.addEventListener("click", function() {
         "row-gap: 15px;"; 
         
     } else {
-        ballon.style.display = "none";
+        div.style.display = "none";
     }
 
 });
