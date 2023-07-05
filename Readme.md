@@ -1,58 +1,63 @@
 # Relógio Digital
 <div align="center">
-<img src="" width="2000px" alt="Imagem do site"/>
+<img src="./img/site.png" width="2000px" alt="Imagem do site" title="Imagem do site"/>
 </div>
 
----
+## Descrição
 
-## Sobre este projeto
-A ideia desse site é:
+Relógio digital inovador e elegante que oferece uma forma contemporânea de exibir a hora. Este software foi desenvolvido com foco na simplicidade, usabilidade e design estético.
 
----
+## Status do projeto
+Projeto concluído.
 
-## Por quê?
+## Pré-requisitos
 
-Este projeto faz parte do meu portfólio pessoal, então, ficarei feliz se você puder me fornecer algum feedback sobre o projeto, código, estrutura ou qualquer coisa que você possa relatar que possa me tornar um desenvolvedor melhor!
+- HTML5;
+- CSS3;
+- JavaScript (ECMAScript 2022).
 
-E-mail: igoraugustobz@gmail.com
+## Instalando
 
-Conecte-se comigo em [LinkedIn](https://www.linkedin.com/in/igoraugustobrz/).
-
-Além disso, você pode usar este projeto como quiser, seja para estudar, seja para fazer melhorias ou ganhar dinheiro com isso!
-
-É grátis!
-
----
-
-## Algumas observações sobre esse site
-
-## Funcionalidades
-
-## Começando 
-
-### Pré-requisitos
-
-### Instalando
-
-**Clonagem do repositório**
+1. Clone o repositório para o seu ambiente local:
 
 ```
 $ git clone https://github.com/igoraugustobrz/RelogioDigital
-
-$ cd Calculator
 ```
-## Construído com 
 
-- HTML;
-- CSS;
-- JavaScript.
+2. Navegue até o diretório do projeto.
 
-## Contribuindo 
+```
+$ cd RelogioDigital
+```
 
-Você pode enviar quantos PR's quiser, terei prazer em analisá-los e aceitá-los! E se você tiver alguma dúvida sobre o projeto...
+## Contribuindo
 
-E-mail: igoraugustobz@gmail.com
+Contribuições são bem-vindas! Se você quiser contribuir para o projeto, siga as etapas abaixo:
 
-Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/igoraugustobrz/).
+1. Fork o repositório e clone-o para o seu ambiente local.
 
-Obrigado!
+2. Crie uma nova branch:
+
+```
+git checkout -b minha-contribuicao
+```
+
+3. Faça as alterações desejadas e commit-as:
+
+```
+git commit -m "Minha contribuição"
+```
+
+4. Envie suas alterações para o repositório remoto:
+
+```
+git push origin minha-contribuicao
+```
+
+5. Abra uma solicitação de pull no repositório original.
+
+## Autor
+
+- Igor Augusto
+- E-mail: igoraugustobz@gmail.com
+- Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/igoraugustobrz/).
