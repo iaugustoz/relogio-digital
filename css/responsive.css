@@ -21,12 +21,12 @@
         height: 80px;
         width: 100px;
         left: 60%;
-        bottom: 60px; 
+        bottom: 8%; 
     }
 }
 
 /* Para telas com largura de 331 até 399px */
-@media (min-width: 331px) and (max-width: 399px) {
+@media (min-width: 330px) and (max-width: 399px) {
 
     body {
         background: url(../img/background-mobile.png);
@@ -38,7 +38,7 @@
 }
 
 /* Para telas com largura de 400px até 469px */
-@media (min-width: 400px) and (max-width: 470px) {
+@media (min-width: 399px) and (max-width: 470px) {
 
     body {
         background: url(../img/background-mobile.png);
@@ -56,7 +56,7 @@
         height: 80px;
         width: 100px;
         left: 65%;
-        bottom: 70px; 
+        bottom: 8%; 
     }
 } 
 
@@ -73,7 +73,7 @@
 
     .ballon {
         left: 65%;
-        bottom: 70px; 
+        bottom: 8%; 
     }
 }
 
@@ -90,7 +90,7 @@
 
     .ballon {
         left: 65%;
-        bottom: 60px;
+        bottom: 8%;
     }
 }
 
@@ -107,6 +107,6 @@
 
     .ballon {
         left: 60%;
-        bottom: 60px;
+        bottom: 8%;
     }
 }

@@ -131,7 +131,7 @@ p span {
     border-radius: 20px 10px 20px 0px;
     background: var(--branco);
     position: absolute;
-    bottom: 60px;
+    bottom: 8%;
     left: 58%;
 }
 
